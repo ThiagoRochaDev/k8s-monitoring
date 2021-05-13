@@ -1,6 +1,6 @@
 provider "aws" {
-  profile = "root"
-  region  = "ap-south-1"
+  profile = "thiago_01"
+  region  = "us-east-1"
 }
 
 provider "kubernetes" {}
@@ -14,6 +14,10 @@ resource "kubernetes_namespace" "tf-ns" {
   
 }
 
-data "aws_efs_file_system" "tf-efs-fs" {
+resource "aws_efs_file_system" "tf-efs-fs" {
   creation_token = "my-efs-file-system-1"
+
+  tags = {
+    Name = "files-thg-filesystem"
+  }
 }

@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddc2bde3-ae53-411a-a205-c0f8a030cc53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eks-cluster.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kubernetes-dashboard-admin.rbac.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kubernetes.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputs.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-groups.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/versions.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vpc.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFS /efs_provision.tf" beforeDir="false" afterPath="$PROJECT_DIR$/EFS /efs_provision.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFS /providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/EFS /providers.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EKS /providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/EKS /providers.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prometheus /promk8s.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Prometheus /promk8s.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +37,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620612668497</updated>
-      <workItem from="1620612669979" duration="7391000" />
+      <workItem from="1620612669979" duration="7728000" />
+      <workItem from="1620866634091" duration="2209000" />
     </task>
     <servers />
   </component>
@@ -58,5 +55,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

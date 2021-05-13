@@ -1,6 +1,6 @@
 provider "aws" {
-  profile = "root"
-  region  = "ap-south-1"
+  profile = "thiago_01"
+  region  = "us-east-1"
 }
 
 provider "http" {}

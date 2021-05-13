@@ -50,7 +50,7 @@ data = {
         - targets: ['192.168.99.101:9117']
       - job_name: 'kube-state-metrics'
         static_configs:
-        - targets: ['kube-state-metrics.kube-system.svc.cluster.local:8080']
+        - targets: ['kube-state-metrics.kube-system.svc.cluster.local:6060']
 EOF
   }
 }
@@ -129,7 +129,7 @@ depends_on = [
   }
   spec {
     selector = {
-      env = "${kubernetes_deployment.prom_deploy.metadata.0.labels.env}"
+      env = kubernetes_deployment.prom_deploy.metadata[0].labels.env
     }
     port {
       port        = 9090

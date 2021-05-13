@@ -7,7 +7,7 @@ resource "kubernetes_deployment" "tf-efs-provisioner" {
 
   metadata {
     name = "tf-efs-provisioner"
-    namespace = "terraform-prom-graf-namespace"
+    namespace = "terraform-prom-grafana-namespace"
   }
 
   spec {
@@ -35,11 +35,11 @@ resource "kubernetes_deployment" "tf-efs-provisioner" {
           name  = "tf-efs-provision"
           env {
             name  = "FILE_SYSTEM_ID"
-            value = data.aws_efs_file_system.tf-efs-fs.file_system_id
+            value = aws_efs_file_system.tf-efs-fs.id
           }
           env {
             name  = "AWS_REGION"
-            value = "ap-south-1"
+            value = "us-east-1"
           }
           env {
             name  = "PROVISIONER_NAME"
@@ -53,7 +53,7 @@ resource "kubernetes_deployment" "tf-efs-provisioner" {
         volume {
           name = "pv-volume"
           nfs {
-            server = data.aws_efs_file_system.tf-efs-fs.dns_name
+            server = aws_efs_file_system.tf-efs-fs.dns_name
             path   = "/"
           }
         }
