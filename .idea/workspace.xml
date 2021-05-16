@@ -5,8 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EFS /efs_provision.tf" beforeDir="false" afterPath="$PROJECT_DIR$/EFS /efs_provision.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EFS /providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/EFS /providers.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EKS /outputs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/EKS /outputs.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EKS /providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/EKS /providers.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prometheus /promk8s.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Prometheus /promk8s.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +40,8 @@
       <updated>1620612668497</updated>
       <workItem from="1620612669979" duration="7728000" />
       <workItem from="1620866634091" duration="2209000" />
+      <workItem from="1620872945518" duration="58236000" />
+      <workItem from="1621207254434" duration="599000" />
     </task>
     <servers />
   </component>

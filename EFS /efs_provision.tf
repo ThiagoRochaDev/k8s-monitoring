@@ -39,7 +39,7 @@ resource "kubernetes_deployment" "tf-efs-provisioner" {
           }
           env {
             name  = "AWS_REGION"
-            value = "us-east-1"
+            value = "us-west-1"
           }
           env {
             name  = "PROVISIONER_NAME"

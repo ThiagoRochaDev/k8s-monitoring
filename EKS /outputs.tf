@@ -59,7 +59,7 @@ resource "null_resource" "update" {
     aws_eks_cluster.tf_eks_cluster
   ]
   provisioner "local-exec" {
-    command     = "aws eks update-kubeconfig --name ${var.cluster-name}"
-    interpreter = ["PowerShell", "-Command"]
+    command     = "aws eks   update-kubeconfig --name ${var.cluster-name}"
+    interpreter = ["/bin/bash" ,"-c"]
   }
 }

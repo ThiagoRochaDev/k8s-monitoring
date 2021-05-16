@@ -1,6 +1,8 @@
 provider "aws" {
-  profile = "thiago_01"
-  region  = "us-east-1"
+
+  region  = "us-west-1"
 }
 
-provider "http" {}
+provider "http" {
+
+}
