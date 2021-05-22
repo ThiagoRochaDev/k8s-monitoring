@@ -2,32 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c88c4df8-f3e4-4476-9d56-0f0274f42b01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/k8s-monitoring.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EFS /efs_provision.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EFS /providers.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EFS /storage_class.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EFS /storage_rbac.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EKS /efs.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EKS /eks-cluster.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EKS /eks-nodegroup.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EKS /outputs.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EKS /providers.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EKS /tfplan" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EKS /variable.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EKS /vpc.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EKS /workstation-external-ip.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prometheus /promk8s.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kube-metrics-configs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kube-metrics-configs/cluster-role-binding.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kube-metrics-configs/cluster-role.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kube-metrics-configs/deployment.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kube-metrics-configs/service-account.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kube-metrics-configs/service.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/efs-provisioner-and-prometheus/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/eks_prometheus_exporter/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/efs-provisioner-and-prometheus/efs-provisioner.tf" beforeDir="false" afterPath="$PROJECT_DIR$/eks_prometheus_exporter/efs-provisioner.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/efs-provisioner-and-prometheus/promk8s.tf" beforeDir="false" afterPath="$PROJECT_DIR$/eks_prometheus_exporter/promk8s.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/efs-provisioner-and-prometheus/provider-variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/eks_prometheus_exporter/provider-variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/efs-provisioner-and-prometheus/rbac.tf" beforeDir="false" afterPath="$PROJECT_DIR$/eks_prometheus_exporter/rbac.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/efs-provisioner-and-prometheus/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/eks_prometheus_exporter/terraform.tfstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/efs-provisioner-and-prometheus/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/eks_prometheus_exporter/terraform.tfstate.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eks-and-efs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/efs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eks-and-efs/efs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/efs/efs.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eks-and-efs/eks-cluster.tf" beforeDir="false" afterPath="$PROJECT_DIR$/efs/eks-cluster.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eks-and-efs/eks-worker-nodes.tf" beforeDir="false" afterPath="$PROJECT_DIR$/efs/eks-worker-nodes.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eks-and-efs/outputs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/efs/outputs.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eks-and-efs/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/efs/providers.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eks-and-efs/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/efs/terraform.tfstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eks-and-efs/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/efs/terraform.tfstate.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eks-and-efs/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/efs/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eks-and-efs/vpc.tf" beforeDir="false" afterPath="$PROJECT_DIR$/efs/vpc.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eks-and-efs/workstation-external-ip.tf" beforeDir="false" afterPath="$PROJECT_DIR$/efs/workstation-external-ip.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kube-state-metrics-configs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/metrics_config_eks/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kube-state-metrics-configs/cluster-role-binding.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/metrics_config_eks/cluster-role-binding.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kube-state-metrics-configs/cluster-role.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/metrics_config_eks/cluster-role.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kube-state-metrics-configs/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/metrics_config_eks/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kube-state-metrics-configs/service-account.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/metrics_config_eks/service-account.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kube-state-metrics-configs/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/metrics_config_eks/service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kube-state-metrics-configs/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/metrics_config_eks/terraform.tfstate" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,10 +62,22 @@
       <workItem from="1621551783828" duration="24436000" />
       <workItem from="1621623233660" duration="1083000" />
       <workItem from="1621630757146" duration="7000" />
+      <workItem from="1621630767927" duration="1054000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
