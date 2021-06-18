@@ -1,3 +1,6 @@
 *.tfstate
 .terraform.*
 .terraform/*
+.idea
+.idea/*
+*.pem
