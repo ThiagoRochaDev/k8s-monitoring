@@ -64,4 +64,19 @@ resource "null_resource" "demo" {
     command     = "aws eks update-kubeconfig --name ${var.cluster-name}"
     interpreter = ["/bin/bash" ,"-c"]
   }
+
+  provisioner "local-exec" {
+    command     = "kubectl apply -f metrics_config_eks/"
+    interpreter = ["/bin/bash" ,"-c"]
+  }
+
+  provisioner "local-exec" {
+    command     = "helm repo add bitnami https://charts.bitnami.com/bitnami"
+    interpreter = ["/bin/bash" ,"-c"]
+  }
+
+  provisioner "local-exec" {
+    command     = "helm install my-release bitnami/grafana"
+    interpreter = ["/bin/bash" ,"-c"]
+  }
 }

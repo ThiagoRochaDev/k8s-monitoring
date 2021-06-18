@@ -9,6 +9,9 @@ provider "kubernetes" {
 }
 
 data "aws_efs_file_system" "demo" {
+  depends_on = [
+    kubernetes_namespace.demo,
+  ]
     creation_token = "efs-eks"
 }
 

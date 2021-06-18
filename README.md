@@ -1,58 +1,28 @@
 # K8s-Monitoring with Prometheus and Grafana
+## Requisitos:
+| Name | Version |
+|------|---------|
+| terraform | >= 0.12 |
+| aws Cli | >= 3.13, < 4.0 |
+| helm | >= 1.0, < 3.0 |
+| kubernetes | >= 1.10.0, < 3.0.0 |
+| make | >= 1.10.0, < 3.0.0 |
 
-### rn this commands in folders to create the cluster and file systems
-```
-terraform init 
-```
-```
-terraform plan 
-```
-```
-terraform apply 
-```
-Run this command to create monitoring kube systems in prometheus
-```
-kubectl apply -f kube-state-metrics-configs/
-```
-# Creating grafana monitoring
+### Execução da aplicação:
+Através de um arquivo makefile no projeto facilita a execução do projeto, então caso queira
+fazer um plano de execução utilize o comando ```make plan``` Sendo iniciada todas as dependências
+do projeto e em seguida o planejamento do projeto.
+Para realizar o deploy da aplicação utilize ```make apply``` e toda a estrutura será provisionada em um cluster eks.
+para remover toda a infra da aplicação , use ``` make destroy```
 
-## Run this in your terminal
-```
-mkdir ${HOME}/
 
-cat << EoF > ${HOME}/grafana.yaml
-datasources:
-datasources.yaml:
-apiVersion: 1
-datasources:
-- name: Prometheus
-type: prometheus
-url: http://prometheus-server.prometheus.svc.cluster.local
-access: proxy
-isDefault: true
-EoF
+### Grafana dashboard com metricas do cluster
+
+No seu terminal irá aparecer seu usuário e senha temporários.
+Use-os para acessar o dashboard:
+```
+Browse to http://127.0.0.1:8080
 ```
 
-```
-kubectl create namespace grafana
-```
-```
-helm install grafana grafana/grafana \
---namespace grafana \
---set persistence.storageClassName="gp2" \
---set persistence.enabled=true \
---set adminPassword='EKS!sAWSome' \
---values ${HOME}/environment/grafana/grafana.yaml \
---set service.type=LoadBalancer  
-```
 
-### get service
-```
-kubectl get all -n grafana
-```
-### get the grafana endpoint
-```
-export ELB=$(kubectl get svc -n grafana grafana -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
-echo "http://$ELB"
-kubectl get secret --namespace grafana grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
-```
+
